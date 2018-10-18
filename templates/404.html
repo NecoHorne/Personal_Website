@@ -1,0 +1,20 @@
+{% extends 'Neco/layout.html' %}
+{% block title %}Error 404{% endblock %}
+{% load static %}
+{% block content %}
+    <div class="error" style="margin-top: 3rem">
+        <div class="error-code m-b-10 m-t-20">404<i class="fa fa-warning"></i></div>
+        <h3 class="font-bold">LOL What!?</h3>
+
+        <div class="error-desc">
+            Sorry, but the page you are looking for was either not found or does not exist. <br/>
+            Try refreshing the page or click the button below to go back to the Homepage.
+            <div>
+                <a class=" login-detail-panel-button btn" style="color: #83b126" href="{% url "index" %}">
+                        <i class="fa fa-arrow-left" style="color: #83b126"></i>
+                        Go back to Homepage
+                    </a>
+            </div>
+        </div>
+    </div>
+{% endblock  %}
