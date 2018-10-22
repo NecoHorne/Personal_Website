@@ -1,5 +1,5 @@
 {% extends 'Neco/layout.html' %}
-{% block title %}Portfolio{% endblock %}
+{% block title %}Neco Horne - Portfolio{% endblock %}
 {% load static %}
 {% block header %}<link type="text/css" rel="stylesheet" href="{% static '/Neco/css/gallery.css' %}" />{% endblock %}
 
@@ -7,12 +7,10 @@
 
     {% include "Neco/header.html" %}
 
-    <main role="main">
-
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Portfolio</h1>
-          <p class="lead text-muted">Below are a few examples of my work, if the projects are not private there will also be links to the github repository for the project.</p>
+          <p class="lead text-muted">Below are a few examples of my work, along with any relevant links to the github repository, google play or web url for the project.</p>
           <p>
             <a href="{% url 'contact' %}" class="btn btn-primary my-2" style="background: #83b126; border: #83b126">Contact Me</a>
           </p>
@@ -30,12 +28,8 @@
         </div>
       </div>
 
-    </main>
-
-    {% include 'Neco/footer.html' %}
-    <div class="scroll-top-wrapper"><span class="scroll-top-inner">
-    <i class="fa fa-2x fa-arrow-circle-up"></i>
-    </span></div>
 {% endblock  %}
 
-{% block extra %}<script src="{% static '/Neco/js/holder.min.js' %}"></script>{% endblock %}
+{% block extra %}
+    <script src="{% static '/Neco/js/holder.min.js' %}"></script>
+{% endblock %}
