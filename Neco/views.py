@@ -62,6 +62,10 @@ def portfolio(request):
     return render(request, 'Neco/portfolio.html', context)
 
 
+def google(request):
+    return render(request, 'Neco/googleeb483e5f93dd14b7.html')
+
+
 def handler404(request):
     return render(request, '404.html', {}, status=404)
 
