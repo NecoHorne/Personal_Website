@@ -1,7 +1,10 @@
 {% extends 'Neco/layout.html' %}
+{% block metaTitle%}- Portfolio, Check out some of the projects I have been busy with!{% endblock %}
 {% block title %}Neco Horne - Portfolio{% endblock %}
 {% load static %}
-{% block header %}<link type="text/css" rel="stylesheet" href="{% static '/Neco/css/gallery.css' %}" />{% endblock %}
+{% block header %}
+    <link type="text/css" rel="stylesheet" href="{% static '/Neco/css/gallery.css' %}"/>
+{% endblock %}
 
 {% block content %}
 
@@ -20,7 +23,7 @@
       <div class="album py-5 bg-light" >
         <div class="container" >
 
-          <div class="row">
+          <div class="card-columns">
               {% for post in posts %}
                   {% include 'Neco/post.html' %}
               {% endfor %}

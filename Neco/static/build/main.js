@@ -1,0 +1,2 @@
+$(document).ready(function(){function a(){verticalOffset="undefined"!=typeof verticalOffset?verticalOffset:0;element=$("body");offset=element.offset();offsetTop=offset.top;$("html, body").animate({scrollTop:offsetTop},500,"linear")}$(function(){$(document).on("scroll",function(){100<$(window).scrollTop()?$(".scroll-top-wrapper").addClass("show"):$(".scroll-top-wrapper").removeClass("show")});$(".scroll-top-wrapper").on("click",a)})});window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","UA-108080479-2");
